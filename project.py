@@ -53,9 +53,9 @@ model = Model(image_model.input, image_model.layers[-2].output)
 
 #model = tf.keras.models.load_model('F:/Trial_project/ChexNet.h5')
 
-train = np.load('train_1.npy',allow_pickle=True)
-test = np.load('test_1.npy',allow_pickle=True)
-validation = np.load('validation_1.npy',allow_pickle=True)
+train = np.load('./Dataframes/train_1.npy',allow_pickle=True)
+test = np.load('./Dataframes/test_1.npy',allow_pickle=True)
+validation = np.load('./Dataframes/validation_1.npy',allow_pickle=True)
 
 columns = ["front X-Ray", "lateral X-Ray", "findings", "dec_ip", "dec_op", "image_features"]
 
