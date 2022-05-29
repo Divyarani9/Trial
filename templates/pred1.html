@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {margin:40px;
+      background-color:beige;
+     }
+
+div.polaroid {
+  width: 70%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+div.t1 {
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+div.tb{
+    border-style:double;
+    border-color: darkblue;
+    border-width: 10px;
+    border-radius: 10px;
+    size: 50px;
+
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color:darkblue;
+}
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+  color:blue;
+  
+}
+
+a {
+  text-decoration: none;
+  color: #008CBA;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+</style>
+</head>
+<body class="body">
+  <form name="" method="POST" action="">
+
+<div class="tb">
+<h1>Medical Report Generation from Chest X-Rays</h1>
+</div>
+<div class="row">
+    <div class="column">
+        <div class="polaroid">
+          {{% if front_XRay%}}
+            <img src={{front_XRay}}  width=334, height=300>
+            <div class="container">
+            <p>Frontal Image</p>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="polaroid">
+            <img src="{{ url_for('display_image', filename=filename) }}">
+            <img src={{lateral_XRay}}  width=334, height=300>
+            <div class="container">
+            <p>Lateral Image</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="t1">
+    <h1> Medical report</h1>
+    {% if prediction_text %}
+    <p> {{ prediction_text }} </p>
+</div>
+</form>
+</body>
+</html>
+
+

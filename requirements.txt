@@ -1,0 +1,15 @@
+pandas
+numpy
+Flask
+pickle
+sklearn
+tensorflow
+nltk
+matplotlib
+seaborn
+Werkzeug
+itsdangerous
+gunicorn
+Jinja2
+scipy
+scikit-learn

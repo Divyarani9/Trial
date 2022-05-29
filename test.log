@@ -1,0 +1,24 @@
+attrs.py: Creating converter from 3 to 5
+_internal.py:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+_internal.py: 127.0.0.1 - - [29/May/2022 16:21:57] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+_internal.py: 127.0.0.1 - - [29/May/2022 16:21:57] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+_internal.py: 127.0.0.1 - - [29/May/2022 16:21:57] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+_internal.py: 127.0.0.1 - - [29/May/2022 16:22:44] "GET / HTTP/1.1" 200 -
+_internal.py: 127.0.0.1 - - [29/May/2022 16:23:00] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+_internal.py: 127.0.0.1 - - [29/May/2022 16:23:00] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+_internal.py: 127.0.0.1 - - [29/May/2022 16:23:00] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+attrs.py: Creating converter from 3 to 5
+saving_utils.py: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+attrs.py: Creating converter from 3 to 5
+save_impl.py: Skipping full serialization of Keras layer <keras.layers.core.dense.Dense object at 0x000002DBF94A19A0>, because it is not built.
+save.py: Found untraced functions such as Concat_w1_Dense_layer_call_fn, Concat_w1_Dense_layer_call_and_return_conditional_losses, Concat_w2_Dense_layer_call_fn, Concat_w2_Dense_layer_call_and_return_conditional_losses, Concat_Dense_layer_layer_call_fn while saving (showing 5 of 8). These functions will not be directly callable after loading.
+builder_impl.py: Assets written to: ram://c0e076fd-b4c7-4656-8a49-73d1bd50f072/assets
+save.py: <__main__.Attention object at 0x000002DBF94DFAF0> has the same name 'Attention' as a built-in Keras object. Consider renaming <class '__main__.Attention'> to avoid naming conflicts when loading with `tf.keras.models.load_model`. If renaming is not possible, pass the object in the `custom_objects` parameter of the load function.
+save.py: <keras.layers.recurrent.GRUCell object at 0x000002DBF94BE940> has the same name 'GRUCell' as a built-in Keras object. Consider renaming <class 'keras.layers.recurrent.GRUCell'> to avoid naming conflicts when loading with `tf.keras.models.load_model`. If renaming is not possible, pass the object in the `custom_objects` parameter of the load function.
+attrs.py: Creating converter from 3 to 5
+_internal.py:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+_internal.py: 127.0.0.1 - - [29/May/2022 20:01:57] "GET / HTTP/1.1" 200 -
+_internal.py: 127.0.0.1 - - [29/May/2022 20:01:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+_internal.py: 127.0.0.1 - - [29/May/2022 20:02:11] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+_internal.py: 127.0.0.1 - - [29/May/2022 20:02:11] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+_internal.py: 127.0.0.1 - - [29/May/2022 20:02:11] "[31m[1mPOST / HTTP/1.1[0m" 405 -
